@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="mystyle.css" />
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js">
+</script>
+
+<script>
+function newDoc()
+ {
+ window.location.assign("http://www.w3school.com.cn")
+ }
+ function myFunction()
+{
+var obj=document.getElementById("h01");
+obj.innerHTML="Hello Prototype";
+onload=myFunction;
+}
+
+</script>
+<style type="text/css">
+  h1 {text-transform: uppercase}
+  p1{text-transform: uppercase}
+  p.lowercase {text-transform: lowercase}
+  p.capitalize {text-transform: capitalize}
+  h1 {
+  padding-top: 10px;
+  padding-right: 0.25em;
+  padding-bottom: 2ex;
+  padding-left: 20%;
+  #important{color:red; background:yellow;}
+  }
+</style>
+
+</head>
+<body>
+<p><strong>我是粗体字，不是斜体字，因为我不在列表当中，所以这个规则对我不起作用</strong></p>
+<a href="http://www.baidu.com">dfdf</a>
+<ol>
+<li><strong>我是斜体字。这是因为 strong 元素位于 li 元素内。</strong></li>
+<li>我是正常的字体。</li>
+</ol>
+<a href="http://www.baidu.com">144df</a>
+<input type="button" value="加载新文档" onClick="newDoc()">
+<p>The strongly emphasized word in this paragraph is<strong>red</strong>.</p>
+<h1>This subhead is also red.</h2>
+<h2>This subhead is also red.</h2>
+<h2>The strongly emphasized word in this subhead is<strong>blue</strong>.</h2>
+<a href="http://www.w3school.com.cn">W3School</a>
+<h1>This Is An H1 Element</h1>
+<p1>This is some text in a paragraph.</p>
+<p class="lowercase">This is some text in a paragraph.</p>
+<p class="capitalize">This is some text in a paragraph.</p>
+<h1 id="mostImportant">This is important!</h1>
+<em id="mostImportant">This is important!</em>
+<ul id="mostImportant">This is important!</ul>
+</body>
+</html>
